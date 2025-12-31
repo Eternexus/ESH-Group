@@ -1,0 +1,379 @@
+/* ====== RÉGLAGES GÉNÉRAUX ====== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: #00fff7;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* ====== PAGE D'ACCUEIL ====== */
+
+.home {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ====== MENU 3 COLONNES ====== */
+
+.columns {
+  display: flex;
+  height: 100vh;
+}
+
+.column {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.column:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+/* Colonne Notre fonctionnement */
+.fonctionnement {
+  background-image: url("fonctionnement.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 30px;
+  filter: contrast(1.2) brightness(1.05) saturate(1.1);
+}
+
+.fonctionnement h2 {
+  position: static;
+  font-size: 2.8em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px 35px;
+  border-radius: 12px;
+}
+
+/* Colonne "Nos abonnements" */
+.chalk {
+  background-image: url("abonnements.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chalk h2 {
+  position: static;
+  font-family: 'Shadows Into Light', cursive;
+  color: #f5f5f5;
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 0 #bbb, -1px -1px 0 #999;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+/* Colonne Service Client */
+.service-client {
+  background-image: url("service-client.jpg");
+  background-size: cover;
+  background-position: right center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px;
+  filter: contrast(1.15) brightness(1.05) saturate(1.1);
+}
+
+.service-client h2 {
+  position: static;
+  font-size: 2.6em;
+  color: white;
+  text-align: left;
+  max-width: 60%;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.45);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+/* ====== PAGE FONCTIONNEMENT ====== */
+
+.function-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050505, #0f0f0f);
+  color: #eaeaea;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.function-page h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  color: #00fff7;
+}
+
+.function-intro {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  font-size: 1.2em;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.function-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.function-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 4px solid #00fff7;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.function-card h2 {
+  margin-top: 0;
+  color: #00fff7;
+}
+
+.function-card p,
+.function-card li {
+  line-height: 1.6;
+}
+
+.function-note {
+  margin-top: 60px;
+  padding: 20px;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  display: inline-block;
+  font-size: 1em;
+}
+
+.function-back {
+  display: block;
+  margin-top: 50px;
+  color: #00fff7;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.function-back:hover {
+  text-decoration: underline;
+}
+
+/* ====== PAGE TARIFS (TABLEAU NOIR) ====== */
+
+.chalk-page {
+  min-height: 100vh;
+  background-image: url("abonnements.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
+  font-family: 'Shadows Into Light', cursive;
+  padding: 40px;
+}
+
+.chalk-page h1 {
+  font-size: 3.5em;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.chalk-table {
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  font-size: 1.6em;
+}
+
+.chalk-table th,
+.chalk-table td {
+  border: 2px solid #ddd;
+  padding: 15px 25px;
+}
+
+.chalk-btn {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.6em;
+  padding: 12px 30px;
+  background: transparent;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  cursor: pointer;
+}
+
+.chalk-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.chalk-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #f5f5f5;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+
+.chalk-link:hover {
+  text-decoration: underline;
+}
+
+/* ====== PAGE SERVICE CLIENT ====== */
+
+.support-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #050505, #111);
+  color: #eaeaea;
+  padding: 40px 20px;
+}
+
+.support-page h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.support-intro {
+  font-size: 1.2em;
+  opacity: 0.85;
+  margin-bottom: 50px;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+}
+
+.faq-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #00fff7;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.faq-card h3 {
+  margin-top: 0;
+  color: #00fff7;
+}
+
+.faq-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.support-contact {
+  margin-top: 60px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #00fff7;
+  display: inline-block;
+}
+
+.support-contact h2 {
+  margin-top: 0;
+  color: #00fff7;
+}
+
+.phone {
+  font-size: 1.6em;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.support-back {
+  display: block;
+  margin-top: 50px;
+  color: #00fff7;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.support-back:hover {
+  text-decoration: underline;
+}
+
+/* ====== PAGE CGU ====== */
+
+.cgu-page {
+  min-height: 100vh;
+  background: #050505;
+  color: #eaeaea;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.cgu-page h1 {
+  text-align: center;
+  font-size: 2.6em;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #00fff7;
+}
+
+.cgu-intro {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.cgu-section {
+  max-width: 900px;
+  margin: 0 auto 25px auto;
+  line-height: 1.6;
+}
+
+.cgu-section h2 {
+  color: #00fff7;
+}
+
+.cgu-back {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  color: #00fff7;
+  text-decoration: none;
+}
+
+.cgu-back:hover {
+  text-decoration: underline;
+}
