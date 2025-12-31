@@ -1,4 +1,4 @@
-/* ====== RÉGLAGES GÉNÉRAUX ====== */
+e/* ====== RÉGLAGES GÉNÉRAUX ====== */
 
 * {
   box-sizing: border-box;
@@ -77,7 +77,7 @@ body {
 
 /* Colonne "Nos abonnements" */
 .chalk {
-  background-image: url("abonnements.jpg");
+  background-image: url("abonnements.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
