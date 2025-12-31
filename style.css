@@ -52,7 +52,7 @@ body {
 
 /* Colonne Notre fonctionnement */
 .fonctionnement {
-  background-image: url("fonctionnement.jpg");
+  background-image: url("fonctionnement.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
