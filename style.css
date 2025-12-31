@@ -1,4 +1,4 @@
-e/* ====== RÉGLAGES GÉNÉRAUX ====== */
+/* ====== RÉGLAGES GÉNÉRAUX ====== */
 
 * {
   box-sizing: border-box;
@@ -99,7 +99,7 @@ body {
 
 /* Colonne Service Client */
 .service-client {
-  background-image: url("service-client.jpg");
+  background-image: url("service-client.jpeg");
   background-size: cover;
   background-position: right center;
   display: flex;
