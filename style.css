@@ -99,7 +99,7 @@ body {
 
 /* Colonne Service Client */
 .service-client {
-  background-image: url("serviceclient.jpeg");
+  background-image: url("service-client.jpeg");
   background-size: cover;
   background-position: right center;
   display: flex;
