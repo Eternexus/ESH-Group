@@ -367,7 +367,7 @@ body {
 }
 
 .cgu-back {
-  display: block;
+ display: block;
   text-align: center;
   margin-top: 40px;
   color: #00fff7;
@@ -377,3 +377,9 @@ body {
 .cgu-back:hover {
   text-decoration: underline;
 }
+
+/* ====== Menu : cacher le texte des colonnes ====== */
+
+.columns h2 { 
+ display: none;
+} 
